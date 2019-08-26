@@ -11,6 +11,8 @@ body {
     font-family: 'Merriweather', serif;
     letter-spacing: .01rem;
     line-height: 1.75rem;
+    margin: 0;
+    position: relative;
 }
 
 .nav {
@@ -69,6 +71,32 @@ body {
     background-color: #f5f8fa;
     padding: 2rem;
     text-align: center;
+}
+
+.wrapper {
+    min-height: 100%;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -20px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    color: #aaaaaa;
+    text-align: center;
+    font-size: 12px;
+}
+
+.border-top {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0,0,0,.125);
 }
 
 /* Home page */ 
@@ -156,35 +184,10 @@ body {
     font-size: 24px;
 }
 
-.wrapper {
-    min-height: 100%;
-  
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: -20px;
-}
 
-.push {
-    height: 20px;
-}
 
-.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 100%;
-    color: #aaaaaa;
-    text-align: center;
-    font-size: 12px;
-}
-
-.border-top {
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: rgba(0,0,0,.125);
+.index-push {
+    height: 200px;
 }
 
 /* Project Page */
@@ -200,11 +203,13 @@ body {
 }
 
 .projects-container {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5em;
     grid-auto-rows: minmax(225px, auto);
     padding: 1em;
+    margin-top: 20px;
 }
 
 .nested {
@@ -254,4 +259,8 @@ body {
 
 .link-button:hover {
     color: rgb(0, 116, 217);
+}
+
+.projects-push {
+    height: 80px; 
 }
