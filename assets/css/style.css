@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:600,700|Teko&display=swap');
 
 *{
     box-sizing: border-box;
@@ -69,7 +69,6 @@ body {
     background-color: #f5f8fa;
     padding: 2rem;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 /* Home page */ 
@@ -110,7 +109,7 @@ body {
     justify-items: center;
     grid-template-columns: 400px 300px;
     margin: 0px auto;
-    min-height: 100%;
+    margin-top: 40px;
 }
 
 .about-title {
@@ -157,6 +156,14 @@ body {
     font-size: 24px;
 }
 
+.wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -20px;
+}
+
 .push {
     height: 20px;
 }
@@ -190,4 +197,61 @@ body {
     letter-spacing: .1rem;
     color: rgb(0, 116, 217);
     margin: 15px 10px 0px 10px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5em;
+    grid-auto-rows: minmax(225px, auto);
+    padding: 1em;
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid #aaaaaa;
+    padding: 1em;
+    align-content: center;
+    justify-items: center;
+}
+
+.project-image img {
+    height: 200px;
+    width: 250px;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: .5rem;
+}
+
+.project-content {
+    font-family: 'Merriweather', serif;
+}
+
+.project-content p {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.project-button {
+    margin-top: 10px;
+    margin-right: 8px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.project-button i:hover {
+    color: rgb(0, 116, 217);   
+}
+
+.link-button {
+    padding: .1rem;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: .04rem;
+}
+
+.link-button:hover {
+    color: rgb(0, 116, 217);
 }
