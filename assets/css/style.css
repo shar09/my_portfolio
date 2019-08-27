@@ -262,3 +262,13 @@ body {
 .projects-push {
     height: 80px; 
 }
+
+/* Resume Page */
+
+.resume-container {
+    width: 832px;
+    margin: 40px 300px;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: .5rem;
+}
+
