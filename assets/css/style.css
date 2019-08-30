@@ -266,11 +266,16 @@ body {
 /* Resume Page */
 
 .resume-container {
-    width: 832px;
-    margin: 40px 300px;
+    margin: 40px 116px;
+    width: 100%;
+}
+
+.resume-image img {
+    width: 1200px;
     border: 1px solid rgba(0,0,0,.125);
     padding: .5rem;
 }
+
 
 /* Photos Page */
 .photos-container {
