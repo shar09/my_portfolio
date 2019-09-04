@@ -342,5 +342,9 @@ body {
 }
   
 @media only screen and (max-width: 640px){
-
+    .resume-container {
+        display: flex;
+        margin: 40px auto;
+        justify-content: start;
+    }
 } 
