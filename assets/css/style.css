@@ -135,13 +135,12 @@ body {
 }
 
 .index-container {
+    max-width: 700px;
     display: grid;
-    width: 45%;
-    justify-items: center;
-    grid-template-columns: 2fr 1.5fr;
-    grid-gap: 1.5em;
-    margin: 0px auto;
-    margin-top: 40px;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 1em;
+    margin: 40px auto;
+    align-content: center;
 }
 
 .about-title {
@@ -155,8 +154,11 @@ body {
 }
 
 .about p {
+    width: 95%;
     font-weight: 400;
     text-align: left;
+    padding: 0px;
+    align-content: right;
 }
 
 .contact ul {
@@ -189,7 +191,7 @@ body {
 }
 
 .index-push {
-    height: 150px;
+    height: 125px;
 }
 
 /* Project Page */
@@ -270,12 +272,13 @@ body {
 /* Resume Page */
 
 .resume-container {
-    margin: 40px 116px;
-    width: 100%;
+    display: flex;
+    margin: 40px auto;
+    justify-content: center;
 }
 
 .resume-image img {
-    width: 1200px;
+    width: 960px;
     border: 1px solid rgba(0,0,0,.125);
     padding: .5rem;
 }
@@ -323,23 +326,21 @@ body {
 }
 
 @media only screen and (max-width:980px) {
-    /*
-    .index-container {
-        display: grid;
-        width: 45%;
-        justify-items: center;
-        grid-template-columns: 1fr;
-        grid-gap: 1.5em;
-        margin: 0px auto;
-        margin-top: 40px;
+    .resume-container {
+        display: flex;
+        margin: 40px auto;
+        justify-content: start;
     }
-    */
 }
     
 @media only screen and (max-width: 768px) {
-
+    .resume-container {
+        display: flex;
+        margin: 40px auto;
+        justify-content: start;
+    }
 }
   
 @media only screen and (max-width: 640px){
 
-}
+} 
