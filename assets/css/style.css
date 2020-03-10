@@ -157,7 +157,7 @@ footer {
 }
 
 .contact-title {
-    margin: 10px 36px;;
+    margin: 10px 36px;
     font-size: 22px;
 }
 
@@ -196,10 +196,6 @@ footer {
 
 .contact ul > li > i {
     font-size: 24px;
-}
-
-.index-push {
-    height: 30px;
 }
 
 /* Project Page */
@@ -273,10 +269,6 @@ footer {
     color: rgb(0, 116, 217);
 }
 
-.projects-push {
-    height: 80px; 
-}
-
 /* Resume Page */
 
 .resume-container {
@@ -342,14 +334,10 @@ footer {
 }
     
 @media only screen and (max-width: 900px) {
-    .resume-container {
-        display: flex;
-        margin: 40px auto;
-        justify-content: start;
-    }
+
 }
   
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     .wrapper {
         position: relative;
         overflow-x: hidden;
@@ -393,12 +381,62 @@ footer {
         transform: translateX(0%);
     }
 
-    .resume-container {
-        display: flex;
-        margin: 40px auto;
-        justify-content: start;
+    /* Home Page */
+
+    .index-container {
+        grid-gap: 0em;
+        margin: 40px 24px;
+    }
+    
+    .contact-title {
+        margin: 10px 22px;
+    }
+
+    .contact ul{
+        margin-left: -14px;
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 648px) {
+    .push {
+        height: 800px;
+    }
+
+    /* Home Page */
+    
+    .index-container {
+        grid-template-columns: 1fr;
+        grid-gap: 0.9em;
+        margin: 40px;
+    }
+
+    .about-title {
+        margin: 8px 0px;
+    }
+            
+    .contact-title {
+        margin: 10px 0;
+    }
+    
+    .contact ul{
+        margin-left: -36px;
+    }
 }
+
+@media only screen and (max-width: 460px) {
+    .push {
+        height: 900px;
+    }
+
+    /* Home Page */
+    
+    .index-container {
+        margin: 30px 40px;
+    }
+} 
+
+@media only screen and (max-width: 360px) {
+    .push {
+        height: 1000px;
+    }
+}    
