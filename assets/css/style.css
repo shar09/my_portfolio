@@ -276,17 +276,20 @@ footer {
 /* Resume Page */
 
 .resume-container {
-    display: flex;
-    margin: 40px auto;
-    justify-content: center;
+    position: relative;
+    left: 5%;
 }
 
 .resume-image img {
-    width: 960px;
+    width: 90%;
+    margin: 40px auto;
     border: 1px solid rgba(0,0,0,.125);
     padding: .5rem;
 }
 
+.resume-push {
+    height: 70px;
+}
 
 /* Photos Page */
 .photos-container {
@@ -335,12 +338,6 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         justify-items: stretch;
     }
-
-    /*.resume-container {
-        display: flex;
-        margin: 40px auto;
-        justify-content: start;
-    }*/
 }
     
 @media only screen and (max-width: 900px) {
@@ -426,6 +423,11 @@ footer {
     .project-push {
         height: 2600px;
     }
+
+    /* Resume Page */
+    .resume-push {
+        height: 1300px;
+    }
 }
 
 @media only screen and (max-width: 648px) {
@@ -466,6 +468,11 @@ footer {
     .project-push {
         height: 3650px;
     }
+
+    /* Resume Page */
+    .resume-push {
+        height: 1100px;
+    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -482,6 +489,11 @@ footer {
     .project-push {
         height: 4000px;
     }
+
+    /* Resume Page */
+    .resume-push {
+        height: 850px;
+    }
 } 
 
 @media only screen and (max-width: 360px) {
@@ -496,6 +508,11 @@ footer {
 
     .project-push {
         height: 4200px;
+    }
+
+    /* Resume Page */    
+    .resume-push {
+        height: 800px;
     }
 
 }    
