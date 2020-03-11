@@ -269,6 +269,10 @@ footer {
     color: rgb(0, 116, 217);
 }
 
+.project-push {
+    height: 70px;
+}
+
 /* Resume Page */
 
 .resume-container {
@@ -325,12 +329,18 @@ footer {
     margin-top: 30px;
 }
 
-@media only screen and (max-width:1150px) {
-    .resume-container {
+@media only screen and (max-width:1380px) {
+    /* Project Page */
+    .nested {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: stretch;
+    }
+
+    /*.resume-container {
         display: flex;
         margin: 40px auto;
         justify-content: start;
-    }
+    }*/
 }
     
 @media only screen and (max-width: 900px) {
@@ -383,11 +393,10 @@ footer {
     }
 
     .push {
-        height: 600px;
+        height: 700px;
     }
 
     /* Home Page */
-
     .index-container {
         grid-gap: 0em;
         margin: 40px 24px;
@@ -400,6 +409,23 @@ footer {
     .contact ul{
         margin-left: -14px;
     }
+
+    /* Project Page */
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nested {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-image img {
+        width: 275px;
+    }
+
+    .project-push {
+        height: 2600px;
+    }
 }
 
 @media only screen and (max-width: 648px) {
@@ -407,8 +433,7 @@ footer {
         height: 800px;
     }
 
-    /* Home Page */
-    
+    /* Home Page */   
     .index-container {
         grid-template-columns: 1fr;
         grid-gap: 0.9em;
@@ -426,6 +451,21 @@ footer {
     .contact ul{
         margin-left: -36px;
     }
+
+    /* Project Page */
+    .nested {
+        grid-template-columns: repeat(1, 1fr);
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+
+    .project-image img {
+        width: 300px;
+    }
+
+    .project-push {
+        height: 3650px;
+    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -433,10 +473,14 @@ footer {
         height: 900px;
     }
 
-    /* Home Page */
-    
+    /* Home Page */    
     .index-container {
         margin: 30px 40px;
+    }
+
+    /* Project Page */
+    .project-push {
+        height: 4000px;
     }
 } 
 
@@ -444,4 +488,14 @@ footer {
     .push {
         height: 1000px;
     }
+
+    /* Project Page */    
+    .project-image img {
+        width: 250px;
+    }
+
+    .project-push {
+        height: 4200px;
+    }
+
 }    
