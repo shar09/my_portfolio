@@ -313,9 +313,9 @@ footer {
 }
 
 .pup {    
-    height: 200px;
-    width: 250px;
-
+    height: 100px;
+    width: 100px;
+    image-orientation: from-image;
 }
 
 #skydive {
