@@ -353,7 +353,29 @@ footer {
     }
 
     /* Photos Page */
+    .photos-container {
+        margin: 30px 60px;
+    }
+
+    #peru-group {
+        grid-column: 1/-1;
+        grid-row: 1/7;
+    }
+
+    #hero {
+        grid-column: 1/3;
+        grid-row: 7/10;
+    }
     
+    #puppy {
+        grid-column: 3/5;
+        grid-row: 7/10;
+    }
+
+    #skydive {
+        grid-column: 5/8;
+        grid-row: 7/10;
+    }
 
 }
 
@@ -447,7 +469,33 @@ footer {
     }
 
     /* Photos Page */
+    .photos-container {
+        margin: 30px 60px;
+    }
 
+    #peru-group {
+        grid-column: 1/-1;
+        grid-row: 1/7;
+    }
+
+    #hero {
+        grid-column: 1/3;
+        grid-row: 7/10;
+    }
+    
+    #puppy {
+        grid-column: 4/6;
+        grid-row: 7/10;
+    }
+
+    #skydive {
+        grid-column: 1/-1;
+        grid-row: 10/14;
+    }
+
+    .photos-push {
+        height: 1400px;
+    }
 }
 
 @media only screen and (max-width: 648px) {
@@ -495,7 +543,10 @@ footer {
     }
 
     /* Photos Page */
-
+    #puppy {
+        grid-column: 3/5;
+        grid-row: 7/10;
+    }   
 }
 
 @media only screen and (max-width: 460px) {
@@ -519,8 +570,39 @@ footer {
     }
 
     /* Photos Page */
+    .photos-container {
+        margin: 30px 20px;
+    }
 
- 
+    #peru-group {
+        grid-column: 1/-1;
+        grid-row: 1/7;
+    }
+
+    #hero {
+        grid-column: 1/-1;
+        grid-row: 7/10;
+        justify-self: end;
+        width: 225px;
+        height: 250px;
+    }
+    
+    #puppy {
+        grid-column: 1/-1;
+        grid-row: 10/13;
+        justify-self: start;
+        width: 225px;
+        height: 250px;
+    }
+
+    #skydive {
+        grid-column: 1/-1;
+        grid-row: 13/17;
+    }
+
+    .photos-push {
+        height: 1700px;
+    }
 }
 @media only screen and (max-width: 360px) {
     .push {
@@ -542,4 +624,27 @@ footer {
     }
 
     /* Photos Page */
+    #peru-group {
+        grid-column: 1/-1;
+        grid-row: 1/6;
+    }
+
+    #hero {
+        grid-column: 1/-1;
+        grid-row: 6/9;
+    }
+    
+    #puppy {
+        grid-column: 1/-1;
+        grid-row: 9/12;
+    }
+
+    #skydive {
+        grid-column: 1/-1;
+        grid-row: 12/15;
+    }
+
+    .photos-push {
+        height: 1600px;
+    }
 }
