@@ -10,4 +10,4 @@
 
 @ https://github.com/shar09  
 
-## Site deployed @ https://shar09.github.io/my_portfolio/
+## Site deployed @ https://sharathtelu.com
