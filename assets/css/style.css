@@ -182,13 +182,13 @@ footer {
     font-size: 24px;
 }
 
-.contact ul > li > a > i:hover {
+/* .contact ul > li > a > i:hover {
     color: rgb(0, 116, 217);
 }
 
 .contact ul > li > a:hover {
     color: rgb(0, 116, 217);
-}
+} */
 
 .contact ul > li > span {
     font-size: 14px;
@@ -196,6 +196,14 @@ footer {
 
 .contact ul > li > i {
     font-size: 24px;
+}
+
+.link:hover .link-text { 
+    color: rgb(0, 116, 217); 
+}
+
+.link:hover .icon { 
+    color: rgb(0, 116, 217); 
 }
 
 /* Project Page */
@@ -252,6 +260,8 @@ footer {
     margin-right: 8px;
     font-size: 18px;
     border-radius: 8px;
+    border: 1px solid #2e2e2e;
+    padding: 0.1 0.6em; 
 }
 
 .project-button i:hover {
@@ -259,7 +269,8 @@ footer {
 }
 
 .link-button {
-    padding: .1rem;
+    /* padding: .3rem; */
+    font-size: 1.1em;
     text-decoration: none;
     font-family: 'Teko', sans-serif;
     letter-spacing: .04rem;
@@ -414,7 +425,7 @@ footer {
     .toggle-page-move {
         width: 100%;
         position: absolute;
-        top: 204px;
+        top: 102px;
     }
 
     #menu-bars {
@@ -460,7 +471,7 @@ footer {
     }
 
     .project-push {
-        height: 3000px;
+        height: 3600px;
     }
 
     /* Resume Page */
@@ -534,7 +545,7 @@ footer {
     }
 
     .project-push {
-        height: 3650px;
+        height: 4600px;
     }
 
     /* Resume Page */
